@@ -36,7 +36,7 @@ func main() {
     ctx.WithError(err).Fatal("Could not subscribe")
   }
   //analyse and send payload to opensensors.io
-  for i := 0 ; i < configuration.LOOP_NB; i++ {
+  for i := 0 ; configuration.LOOP_NB == -1 || i < configuration.LOOP_NB; i++ {
   	payload := <-msg
   	browseAndForward(payload.PayloadFields, configuration.ROOT_TOPIC)
 	}
