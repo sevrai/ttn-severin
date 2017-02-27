@@ -1,0 +1,12 @@
+{
+ "APP_ID": "my_ttn_app",
+ "APP_KEY": "ttn_secret_app_key",
+ "TTN_URL": "tcp://[REGION].thethings.network:1883",
+ "ROOT_TOPIC": "topic_to_subscribe",
+ "DEV_ID": "my_ttn_dev_id",
+ "OS_ENDPOINT": "https://realtime.opensensors.io/v1/topics//users/my-opensensors-username",
+ "OS_ID": "my_os.io_device_id",
+ "OS_PWD": "my_os.io_device_pwd",
+ "API_KEY": "opensensors_api_key",
+ "LOOP_NB" : "number of messages to forward (integer)"
+}
